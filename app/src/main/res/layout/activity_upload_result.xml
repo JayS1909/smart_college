@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadResultActivity"
+    android:background="@drawable/bg"
+    android:padding="25dp">
+
+
+
+    <Spinner
+        android:id="@+id/spinnerYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:entries="@array/year_array"
+        android:prompt="@string/select_year" />
+
+    <Spinner
+        android:id="@+id/spinnerSemester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerYear"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:entries="@array/semester_array"
+        android:prompt="@string/select_semester" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupStudentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerSemester"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioButtonRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regular_student"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonDirectSecondYear"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:text="@string/direct_second_year_student" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnChooseFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMarks"
+        android:layout_marginTop="16dp"
+        android:text="Choose PDF File" />
+
+    <Button
+        android:id="@+id/btnUploadResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnChooseFile"
+        android:layout_marginTop="24dp"
+        android:text="@string/upload_result" />
+
+    <EditText
+        android:id="@+id/editTextMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupStudentType"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Marks" />
+
+</RelativeLayout>

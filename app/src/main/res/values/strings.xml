@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">help</string>
+    <string name="select_year">Select Year</string>
+    <string name="select_semester">Select Semester</string>
+    <string name="regular_student">Regular Student</string>
+    <string name="direct_second_year_student">Direct Second Year Student</string>
+    <string name="upload_result">Upload Result</string>
+</resources>

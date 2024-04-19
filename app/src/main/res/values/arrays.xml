@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="year_array">
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+
+    </string-array>
+    <string-array name="class_options">
+        <item>SE/A</item>
+        <item>SE/B</item>
+        <item>TE/A</item>
+        <item>TE/B</item>
+        <item>BE/A</item>
+        <item>BE/B</item>
+    </string-array>
+
+    <string-array name="semester_array">
+        <item>Semester 1</item>
+        <item>Semester 2</item>
+    </string-array>
+</resources>
